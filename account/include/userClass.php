@@ -94,7 +94,7 @@ $(document).ready(function(){
         $mail->Username = "support@regiontrust.org"; // Default cpanel email account
         $mail->Password = 'Snipper007.'; // Default cpanel email password
         $mail->Port = 465; // 587 or 465
-        $mail->SMTPSecure = "ssl"; // tls
+        $mail->SMTPSecure = "tls"; // tls or ssl
 
         //Email Settings
         $mail->isHTML(true);
