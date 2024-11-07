@@ -1,7 +1,7 @@
 <?php
 ob_start();
 require_once("./include/loginFunction.php");
-require_once ('./session.php');
+require_once('./session.php');
 $sql = "SELECT * FROM settings WHERE id ='1'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
@@ -21,11 +21,12 @@ $sendMail = new emailMessage();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title><?=$pageTitle ?> - Login </title>
+    <title><?= $pageTitle ?> - Login </title>
     <link rel="icon" type="image/png" href="../assetss/images/favicon.png">
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
@@ -48,17 +49,19 @@ $sendMail = new emailMessage();
     <link href="./plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
     <script src="./assets/js/libs/jquery-3.1.1.min.js"></script>
+    <!-- Chatway -->
+    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=jw4w8aruz4Z2"></script>
 
     <!-- END THEME GLOBAL STYLES -->
     <title>Pin</title>
     <style>
-        
-        button{
-            margin:3px;
+        button {
+            margin: 3px;
         }
-        button{
+
+        button {
             display: inline-block;
-            border:1px solid #0a3bff;
+            border: 1px solid #0a3bff;
             color: #0022ff;
             border-radius: 30px;
             -webkit-border-radius: 30px;
@@ -70,13 +73,16 @@ $sendMail = new emailMessage();
             padding: 10px 17px;
             background-color: #FCFAF9;
         }
-        button:hover, button:active{
-            border:1px solid #FFFFFF;
+
+        button:hover,
+        button:active {
+            border: 1px solid #FFFFFF;
             color: #FFFDFC;
             background-color: #FC0000;
         }
 
-        input[type=text], textarea {
+        input[type=text],
+        textarea {
             -webkit-transition: all 0.30s ease-in-out;
             -moz-transition: all 0.30s ease-in-out;
             -ms-transition: all 0.30s ease-in-out;
@@ -87,7 +93,8 @@ $sendMail = new emailMessage();
             border: 1px solid #DDDDDD;
         }
 
-        input[type=text]:focus, textarea:focus {
+        input[type=text]:focus,
+        textarea:focus {
             box-shadow: 0 0 5px rgba(250, 0, 0, 1);
             padding: 3px 0px 3px 3px;
             margin: 5px 1px 3px 0px;
