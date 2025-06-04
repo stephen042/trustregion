@@ -49,8 +49,8 @@ $sendMail = new emailMessage();
     <link href="./plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
     <script src="./assets/js/libs/jquery-3.1.1.min.js"></script>
-    <!-- Chatway -->
-    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=jw4w8aruz4Z2"></script>
+   <!-- jivo -->
+   <script src="//code.jivosite.com/widget/O2kzI9HRtF" async></script>
 
     <!-- END THEME GLOBAL STYLES -->
     <title>Pin</title>

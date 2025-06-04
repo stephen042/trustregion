@@ -195,8 +195,8 @@ $cardCheck = $cardstmt->fetch(PDO::FETCH_ASSOC);
 
 
 
-    <!-- Chatway -->
-    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=jw4w8aruz4Z2"></script>
+   <!-- jivo -->
+   <script src="//code.jivosite.com/widget/O2kzI9HRtF" async></script>
 </head>
 
 <body class="sidebar-noneoverflow">
